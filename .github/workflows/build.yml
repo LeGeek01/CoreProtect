@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
 
     steps:
@@ -32,8 +31,16 @@ jobs:
       - name: Build
         run: mvn -B verify
 
-      - name: Upload plugin artifact
+      - name: Upload final plugin
         uses: actions/upload-artifact@v4
         with:
+          name: plugin
+          path: target/*.jar
+
+      - name: Upload original plugin
+        uses: actions/upload-artifact@v4
+        with:
+          name: plugin-original
+          path: target/*original*.jar       with:
           name: plugin
           path: target/*.jar
