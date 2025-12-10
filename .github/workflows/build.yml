@@ -41,6 +41,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: plugin-original
-          path: target/*original*.jar       with:
-          name: plugin
-          path: target/*.jar
+          path: target/*original*.jar
