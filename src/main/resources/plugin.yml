@@ -1,6 +1,6 @@
 name: CoreProtect
 main: net.coreprotect.CoreProtect
-version: 23.0
+version: 23.1
 branch: development
 api-version: 1.16
 folia-supported: true
